@@ -145,7 +145,7 @@ fun SharedPreferences(navController: NavController) {
                 prefs.saveString("username", nameTextField)
                 userName = nameTextField
             }
-Spacer(modifier = Modifier.height(10.dp))
+            Spacer(modifier = Modifier.height(10.dp))
             Text(text = userName)
             Spacer(modifier = Modifier.height(10.dp))
 

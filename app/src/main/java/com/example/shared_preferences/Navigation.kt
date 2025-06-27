@@ -1,5 +1,6 @@
 package com.example.shared_preferences
 
+import TaskScreen
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
@@ -32,6 +33,7 @@ fun Navigation(navController: NavHostController) {
                 password = password
             )
         }
+        composable(Screens.TaskScreen.route) { TaskScreen() }
     }
 
 
@@ -40,5 +42,5 @@ fun Navigation(navController: NavHostController) {
 sealed class Screens(val route: String) {
     object SharedPreferences : Screens("SharedPreferences")
     object DataShowScreen : Screens("DataShowScreen")
-
+    object TaskScreen : Screens("TaskScreen")
 }

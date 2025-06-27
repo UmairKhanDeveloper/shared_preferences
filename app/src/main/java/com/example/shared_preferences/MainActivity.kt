@@ -1,5 +1,6 @@
 package com.example.shared_preferences
 
+import TaskScreen
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -21,7 +22,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Shared_preferencesTheme {
                 val navController= rememberNavController()
-                Navigation(navController)
+                TaskScreen()
             }
         }
     }
