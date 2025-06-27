@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Shared_preferencesTheme {
                 val navController= rememberNavController()
-                TaskScreen()
+                Navigation(navController)
             }
         }
     }
